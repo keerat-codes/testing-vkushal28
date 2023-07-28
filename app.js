@@ -6,6 +6,8 @@ const PORT = 8009;
 
 require('dotenv').config();
 
+const testing123  = require('./controllers/testing123');
+app.use('/testing', testing123);
 app.use(cors())
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
